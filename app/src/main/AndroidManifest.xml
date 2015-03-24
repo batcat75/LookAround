@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Select_food_or_gadget"
+            android:label="@string/title_activity_select_food_or_gadget" >
+        </activity>
     </application>
 
 </manifest>

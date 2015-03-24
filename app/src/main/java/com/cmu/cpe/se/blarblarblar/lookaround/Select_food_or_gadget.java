@@ -7,20 +7,22 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 
-public class MainActivity extends ActionBarActivity {
+public class Select_food_or_gadget extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_select_food_or_gadget);
 
-        Button button = (Button)findViewById(R.id.buttonEnter);
-        button.setOnClickListener(new View.OnClickListener() {
+        ImageButton back_button = (ImageButton)findViewById(R.id.imageButtonBack);
+        back_button.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), Select_food_or_gadget.class);
-                startActivity(i);
+                Intent i =  new Intent(getApplicationContext(), MainActivity.class);
+                finish();
             }
         });
     }
@@ -29,7 +31,7 @@ public class MainActivity extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_select_food_or_gadget, menu);
         return true;
     }
 
