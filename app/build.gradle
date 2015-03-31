@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.cmu.cpe.se.blarblarblar.lookaround"
-        minSdkVersion 17
+        minSdkVersion 18
         targetSdkVersion 21
         versionCode 1
         versionName "1.0"
@@ -16,9 +16,13 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+        debug {
+            debuggable true
+        }
     }
 }
 
+repositories { mavenCentral() }
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:21.0.3'

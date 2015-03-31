@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">LookAround</string>
+    <string name="app_name">Look Around</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_select_food_or_gadget">Select_food_or_gadget</string>
 
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_splash__screen">Splash_Screen</string>
+
+    <string name="build_tool_version">21.1.2</string>
+    <string name="facebook_app_id">1558674947719502</string>
 </resources>
