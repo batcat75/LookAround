@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 
 public class Select_food_or_gadget extends ActionBarActivity {
@@ -23,6 +24,22 @@ public class Select_food_or_gadget extends ActionBarActivity {
             public void onClick(View v) {
                 Intent i =  new Intent(getApplicationContext(), MainActivity.class);
                 finish();
+            }
+        });
+        ImageView food_button = (ImageView)findViewById(R.id.imageFood);
+        food_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent j =  new Intent(getApplicationContext(), select_Shop.class);
+                startActivity(j);
+            }
+        });
+        ImageView gadget_button = (ImageView)findViewById(R.id.imageGadget);
+        gadget_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent k =  new Intent(getApplicationContext(), select_Shop.class);
+                startActivity(k);
             }
         });
 

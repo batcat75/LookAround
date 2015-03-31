@@ -27,7 +27,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView3"
+        android:id="@+id/imageFood"
         android:src="@drawable/food_button"
         android:layout_below="@+id/textViewSelect"
         android:layout_centerHorizontal="true"
@@ -36,9 +36,9 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView4"
+        android:id="@+id/imageGadget"
         android:src="@drawable/gatget_button"
         android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/imageView3" />
+        android:layout_alignStart="@+id/imageFood" />
 
 </RelativeLayout>

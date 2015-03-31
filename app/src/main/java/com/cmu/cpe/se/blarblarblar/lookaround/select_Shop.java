@@ -1,9 +1,12 @@
 package com.cmu.cpe.se.blarblarblar.lookaround;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
 
 
 public class select_Shop extends ActionBarActivity {
@@ -12,6 +15,15 @@ public class select_Shop extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select__shop);
+
+        ImageButton back_button = (ImageButton)findViewById(R.id.imageBackButton2);
+        back_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i =  new Intent(getApplicationContext(), Select_food_or_gadget.class);
+                finish();
+            }
+        });
     }
 
 
