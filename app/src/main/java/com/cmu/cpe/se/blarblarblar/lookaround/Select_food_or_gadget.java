@@ -30,7 +30,7 @@ public class Select_food_or_gadget extends ActionBarActivity {
         food_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent j =  new Intent(getApplicationContext(), select_Shop.class);
+                Intent j =  new Intent(getApplicationContext(), select_food.class);
                 startActivity(j);
             }
         });
@@ -38,7 +38,7 @@ public class Select_food_or_gadget extends ActionBarActivity {
         gadget_button   .setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent k =  new Intent(getApplicationContext(), select_Shop.class);
+                Intent k =  new Intent(getApplicationContext(), select_food.class);
                 startActivity(k);
             }
         });

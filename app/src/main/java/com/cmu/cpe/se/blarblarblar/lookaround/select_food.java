@@ -10,37 +10,52 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 
 
-public class select_Shop extends ActionBarActivity {
+public class select_food extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_select__shop);
+        setContentView(R.layout.activity_select_food);
 
-        ImageButton back_button = (ImageButton)findViewById(R.id.imageBackButton2);
+        ImageButton back_button = (ImageButton)findViewById(R.id.imageBackButton4);
         back_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i =  new Intent(getApplicationContext(), select_food.class);
+                Intent i =  new Intent(getApplicationContext(), Select_food_or_gadget.class);
                 finish();
             }
         });
-        ImageView sh_button1 = (ImageView)findViewById(R.id.shop_sel_imageView1);
-        sh_button1.setOnClickListener(new View.OnClickListener() {
+        ImageView food_button1 = (ImageView)findViewById(R.id.imageView_food1);
+        food_button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent l =  new Intent(getApplicationContext(), shop_detail.class);
-                startActivity(l);
+                Intent j =  new Intent(getApplicationContext(), select_Shop.class);
+                startActivity(j);
             }
         });
-
+        ImageView food_button2 = (ImageView)findViewById(R.id.imageView_food2);
+        food_button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent j =  new Intent(getApplicationContext(), select_Shop.class);
+                startActivity(j);
+            }
+        });
+        ImageView food_button3 = (ImageView)findViewById(R.id.imageView_food3);
+        food_button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent j =  new Intent(getApplicationContext(), select_Shop.class);
+                startActivity(j);
+            }
+        });
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_select__shop, menu);
+        getMenuInflater().inflate(R.menu.menu_select_food, menu);
         return true;
     }
 

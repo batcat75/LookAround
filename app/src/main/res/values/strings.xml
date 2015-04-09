@@ -14,4 +14,5 @@
     <string name="facebook_app_id">1558674947719502</string>
     <string name="title_activity_select__shop">select_Shop</string>
     <string name="title_activity_shop_detail">shop_detail</string>
+    <string name="title_activity_select_food">select_food</string>
 </resources>
