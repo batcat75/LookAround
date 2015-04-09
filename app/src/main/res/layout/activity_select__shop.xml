@@ -22,4 +22,14 @@
         android:id="@+id/textView"
         android:layout_alignBottom="@+id/imageBackButton2"
         android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/shop_sel_imageView1"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/pork2" />
+
 </RelativeLayout>

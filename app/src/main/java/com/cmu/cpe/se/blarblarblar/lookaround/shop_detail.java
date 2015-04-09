@@ -7,40 +7,30 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 
 
-public class select_Shop extends ActionBarActivity {
+public class shop_detail extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_select__shop);
+        setContentView(R.layout.activity_shop_detail);
 
-        ImageButton back_button = (ImageButton)findViewById(R.id.imageBackButton2);
+        ImageButton back_button = (ImageButton)findViewById(R.id.imageBackButton3);
         back_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i =  new Intent(getApplicationContext(), Select_food_or_gadget.class);
+                Intent i =  new Intent(getApplicationContext(), select_Shop.class);
                 finish();
             }
         });
-        ImageView sh_button1 = (ImageView)findViewById(R.id.shop_sel_imageView1);
-        sh_button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent l =  new Intent(getApplicationContext(), shop_detail.class);
-                startActivity(l);
-            }
-        });
-
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_select__shop, menu);
+        getMenuInflater().inflate(R.menu.menu_shop_detail, menu);
         return true;
     }
 

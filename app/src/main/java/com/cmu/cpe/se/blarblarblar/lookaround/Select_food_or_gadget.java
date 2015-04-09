@@ -35,7 +35,7 @@ public class Select_food_or_gadget extends ActionBarActivity {
             }
         });
         ImageView gadget_button = (ImageView)findViewById(R.id.imageGadget);
-        gadget_button.setOnClickListener(new View.OnClickListener() {
+        gadget_button   .setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent k =  new Intent(getApplicationContext(), select_Shop.class);
